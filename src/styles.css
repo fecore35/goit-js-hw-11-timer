@@ -1,0 +1,47 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+  transition: color 150ms var(--timing-function), background-color 150ms var(--timing-function);
+
+  height: 300vh;
+}
+
+.timer {
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgb(10 175 230 / 0%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.value {
+  font-size: 32px;
+}
+
+.label {
+  font-size: 12px;
+}
